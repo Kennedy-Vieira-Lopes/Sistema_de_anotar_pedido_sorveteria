@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de realizar pedidos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="corpo_header">
+            <div class="barra_menu">
+            <a href="#"><i class="fa-solid fa-bars icon_menu"></i></a>
+            </div>
+            <div class="logo"></div>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="corpo_1">
+            <div class="titulo_corpo1">
+                <i class="fa-regular fa-file-lines icon_titulo1"></i>
+                <h1>Novo pedido</h1>
+            </div>
+            <div class="nome_cliente">
+                <div class="titulo_cliente">
+                    <i class="fa-regular fa-user icon_azul"></i>
+                    <h2>Cliente</h2>
+                </div>               
+                <input type="text" placeholder="Ex: Maria Silva">
+            </div>
+            <div class="sabores">
+                <div class="titulo_sabores">
+                    <i class="fa-solid fa-ice-cream icon_azul"></i>
+                    <h2>Sabores</h2>
+                </div>
+                <div class="btn_tipos">
+                    <div class="btn_sorvetes">
+                        <h3>Sorvetes</h3>
+                        <button id="btn_sorvete_chocolate"><img src="img/sorvete_chocolate.png" alt=""><p>Chocolate</p></button>
+                        <button>Misto</button>
+                        <button>Baunilha</button>
+                    </div>
+
+                    <div class="btn_milkshakes">
+                        <h3>Milkshakes</h3>
+                        <button>Chocolate</button>
+                        <button>Misto</button>
+                        <button>Baunilha</button>
+                    </div>
+                </div>
+                <div class="sabores_cobertura">
+                    <h3>coberturas</h3>
+                    <div class="coberturas">
+                        <button>Nenhum</button>
+                        <button>Chocolate</button>
+                        <button>Morango</button>
+                        <button>Leite Condensado</button>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="observacao">
+                <div class="titulo_observacao">
+                    <i class="fa-regular fa-comment-dots icon_azul"></i>
+                    <h2>Observação</h2>
+                </div>
+                <textarea name="observacao" id="observacao" placeholder="Ex: Adicional de cobertura"></textarea>
+            </div>
+            <div class="btn_confirmar">
+                <button>confirmar</button>
+            </div>
+        </div>
+
+        <div class="corpo_2">
+            <div class="titulo_corpo2">
+                <i class="fa-solid fa-basket-shopping icon_titulo2"></i>
+                <h1>Itens do pedido</h1>
+            </div>
+            <div class="caixa_pedidos">
+
+            </div>
+            <div class="pedidos">
+            </div>
+            <div class="opcoes_pedido">
+                <div class="limpar"><button>Confirmar pedido</button></div>
+                <div class="confirmar"><button>Limpar</button></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="pedidos_realizados"></div>
+        <div class="historico"></div>
+        <div class="mais"></div>
+    </footer>
+</body>
+</html>
